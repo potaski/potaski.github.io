@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello, 这是第一篇博文：论如何copy别人的blog"
+title:  "使用jekyll & github 创建博客"
 categories: jekyll
 tags: jekyll
 author: ZhangWei
@@ -9,7 +9,7 @@ author: ZhangWei
 * content
 {:toc}
 
-> 使用jekyll & github page创建个人博客
+> Hello, 这是第一篇博文：论如何copy别人的blog
 
 ## 一、抄袭别人的作文
 
