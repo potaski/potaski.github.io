@@ -25,6 +25,19 @@ author: ZhangWei
 
 我在原文的基础上，修改了一些描述性文字，并做了顶部导航的中文化，也删除了一些我不需要的页面
 
+可以在本地安装环境，在本地调试后再push，github更新很慢很慢
+
+```shell
+# 配置环境
+zhangwei@zw:potaski.github.io$ gem install jekyll bundler
+# 启动本地服务
+zhangwei@zw:potaski.github.io$ jekyll build; jekyll server
+ ...
+ Auto-regeneration: enabled for '/mnt/d/zhangwei/potaski.github.io'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop
+```
+
 ## 三、最后感谢 Gaohaoyang
 
 页脚已按您的要求留下designed作者信息，如果仍有其它不妥之处，请随时与我联系
