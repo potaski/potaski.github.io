@@ -27,9 +27,9 @@ type: page
 
 ## 联系我
 
-* GitHub：[potaski](https://github.com/potaski)
+* WX：cG90YXNraQ==
 * Email：potaski@qq.com
-* VX：cG90YXNraQ==
+* GitHub：[potaski](https://github.com/potaski)
 
 ## 关于本站
 
