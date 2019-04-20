@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "使用jekyll & github 创建博客"
-categories: jekyll
+title:  "使用 jekyll & github 创建博客"
+categories: 个人随笔
 tags: jekyll
 author: ZhangWei
 ---
