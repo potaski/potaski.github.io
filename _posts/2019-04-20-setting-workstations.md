@@ -40,7 +40,7 @@ mkdir /var/run/sshd
 /usr/sbin/sshd
 ```
 
-## 修改ubuntu配色
+## ubuntu个性化配置
 
 ssh上去发现显示windows文件目录亮瞎眼（以前怎么没发觉）
 
@@ -75,6 +75,30 @@ vim ~/.dircolors
 45 — Magenta 
 46 — Cyan 
 47 – White
+```
+
+然后改了提示符，不太喜欢很长的full path，改为仅显示当前目录名称
+
+```shell
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+# 变更加入到 ~/.bashrc
+```
+
+附PS代码参考：
+
+```shell
+\d ：代表日期，格式为weekday month date，例如："Mon Aug1"
+\H：完整的主机名称。例如：我的机器名称为：fc4.linux，则这个名称就是fc4.linux
+\h ：仅取主机的第一个名字，如上例，则为fc4，.linux则被省略 
+\t ：显示时间为24小时格式，如：HH：MM：SS 
+\T ：显示时间为12小时格式 
+\A ：显示时间为24小时格式：HH：MM 
+\u ：当前用户的账号名称
+\v ：BASH的版本信息
+\w ：完整的工作目录名称。家目录会以 ~代替
+\W ：利用basename取得工作目录名称，所以只会列出最后一个目录
+\# ：下达的第几个命令
+\$ ：提示字符，如果是root时，提示符为：# ，普通用户则为：$
 ```
 
 ## ubuntu镜像切到清华源
