@@ -108,7 +108,8 @@ https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
 再更新一下
 
 ```shell
-sudo apt update 
+sudo apt update
+sudo apt -y upgrade
 ```
 
 ## nodejs和npm安装
@@ -136,21 +137,33 @@ jekyll b; jekyll s
 
 搞定
 
+
+## 基础包
+
+```shell
+sudo apt install mysql libmysqlclient-dev
+```
+
 ## python安装
 
 加个py3，并配置清华大学的源
 
 ```shell
 sudo apt install python3 python3-dev python3-pip
-# 执行pip3还报错的...
-vim /usr/bin/pip3
-# 改为
-# from pip import __main__ 和
-# sys.exit(__main__.main())
-pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
+# 执行pip3 install还报错的...
+Traceback (most recent call last):
+  File "/usr/bin/pip3", line 9, in <module>
+    from pip import main
+ImportError: cannot import name 'main'
+# 忽略掉
 pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+sudo apt install python3-venv
+# 创建venv环境并且再在里面使用pip管理
+python3 -m venv venv
+source venv/bin/active
+pip install wheel
+pip install -r requirements.txt
 ```
-
 
 ## 另外记录几个好用的工具
 
