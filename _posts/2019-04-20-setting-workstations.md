@@ -165,6 +165,20 @@ pip install wheel
 pip install -r requirements.txt
 ```
 
+## wsl字符集问题
+
+> 20190528 补充
+
+最近遇到一个坑是发现线上centos6&7的字符集全部变成了C.UTF-8
+
+查了半天，发现是因为wsl的环境是C.UTF-8导致，出现了一系列字符集错误
+
+面向google了一下，改掉。wsl修改默认字符集为en_US.UTF-8的方式
+
+``` shell
+sudo update-locale LANG=en_US.UTF8
+```
+
 ## 另外记录几个好用的工具
 
 terminal工具：[cmder](https://cmder.net/)
