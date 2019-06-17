@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Ubuntu工作环境配置"
-categories: 办公用品
+title:  "Ubuntu（WSL）工作环境配置"
+categories: 工作工具
 tags: wsl linux npm gem jekyll python
 author: ZhangWei
 ---
