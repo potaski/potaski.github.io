@@ -16,3 +16,5 @@ type: page
 kebab-case (短横线分隔命名)：my-class
 
 PascalCase (首字母大写命名)：MyClass
+
+camelCase (驼峰命名法)：myClass
