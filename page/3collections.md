@@ -9,4 +9,10 @@ type: page
 * content
 {:toc}
 
-## 木有
+## 摘抄
+
+### 编程术语
+
+kebab-case (短横线分隔命名)：my-class
+
+PascalCase (首字母大写命名)：MyClass
